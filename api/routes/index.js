@@ -11,14 +11,16 @@ const socioEconomicoCrianca = require('./socioEconomicoCriancaRoute')
 const violenciaMulher = require('./violenciaMulherRoute')
 const usuariaMulher = require('./usuariaMulherRoute')
 const socioEconomicoMulher = require('./socioEconomicoMulherRoute')
-const funcionario_atendimento = require('../models/funcionario_atendimento')
+const usuario = require('./usuarioRoute')
+
 
 
 
 
 module.exports = app => {
     app.use(express.json())
-    app.use(perfil,
+    app.use(usuario,
+    perfil,
     relatorio,
     funcionario,
     atendimento,
@@ -29,7 +31,6 @@ module.exports = app => {
     socioEconomicoCrianca,
     violenciaMulher,
     usuariaMulher,
-    socioEconomicoMulher,
-    funcionario_atendimento)
+    socioEconomicoMulher)
    
 }

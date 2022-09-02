@@ -8,9 +8,6 @@ router.get('/violenciaMulher/:id', ViolenciaMulherController.pegaUmViolenciaMulh
 router.post('/violenciaMulher', ViolenciaMulherController.criaViolenciaMulher)
 router.put('/violenciaMulher/:id', ViolenciaMulherController.atualizaViolenciaMulher)
 router.delete('/violenciaMulher/:id', ViolenciaMulherController.apagaViolenciaMulher)
-/*router.get('/violenciaMulher/:estudanteId/matricula/:matriculaId',  ViolenciaMulherController.pegaUmaMatricula)
-router.post('/violenciaMulher/:estudanteId/matricula', ViolenciaMulherController.criaMatricula)
-router.put('/violenciaMulher/:estudanteId/matricula/:matriculaId',  ViolenciaMulherController.atualizaMatricula)
-router.delete('/violenciaMulher/:estudanteId/matricula/:matriculaId',  ViolenciaMulherController.apagaMatricula)*/
+
 
 module.exports = router

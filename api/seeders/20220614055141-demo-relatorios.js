@@ -2,29 +2,25 @@ module.exports = {
 	up: (queryInterface, Sequelize) => {
 		return queryInterface.bulkInsert('relatorios', [
 			{
-				Atendimentos: 'abuso sexual',
+				Atendimentos: 'relatorio 1',
 				createdAt: new Date(),
 				updatedAt: new Date()
 			},
 			{
-				Atendimentos: 'violencia fisica',
+				Atendimentos: 'relatorio 2',
 				createdAt: new Date(),
 				updatedAt: new Date()
 			},
-      {
-				Atendimentos: 'carcere privado',
+			{
+				Atendimentos: 'relatorio 3',
 				createdAt: new Date(),
 				updatedAt: new Date()
 			},
-			/*{
-				nome: 'Felipe Cardoso',
-				ativo: true,
-				email: 'felipe@felipe.com',
-				role: 'estudante',
+      		{
+				Atendimentos: 'relatorio 4',
 				createdAt: new Date(),
 				updatedAt: new Date()
-			},*/
-
+			}
 		], {})
 	},
 

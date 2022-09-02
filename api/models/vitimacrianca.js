@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: 'registro_id'
       });
       vitimaCriancas.hasOne(models.Atendimentos, {
-        foreignKey: 'registro_id'
+        foreignKey: 'registroCrianca_id'
       })
     }
   }

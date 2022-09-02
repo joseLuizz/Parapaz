@@ -13,10 +13,13 @@ module.exports = (sequelize, DataTypes) => {
       Funcionario.belongsTo(models.Perfils, {
         foreignKey: 'perfil_id'
       })
+
       Funcionario.belongsToMany(models.Atendimentos, {
-        through: 'funcionario_atendimento',
-        as: 'atendimento',
-        foreignKey: 'funcionario_id'
+        through: 'Atendimento_funcionario'
+      })
+
+      Funcionario.belongsToMany(models.relatorios, {
+        through: 'Funcionario_relatorio'
       })
     }
   }

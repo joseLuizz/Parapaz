@@ -6,6 +6,9 @@ module.exports = (sequelize, DataTypes) => {
   class relatorios extends Model {
 
     static associate(models) {
+      relatorios.belongsToMany(models.Funcionario, {
+        through: 'Funcionario_relatorio'
+      })
       
     }
   }
